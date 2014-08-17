@@ -1,0 +1,24 @@
+extends ../shared/template
+block content
+  h2 The High Rollers
+  table
+    thead
+      th Name
+      th Photo
+      th Cash
+      th Assets
+      th Total
+    tbody
+    each person in people
+      tr
+        td: a(href='/people/#{person._id}')= person.name
+        td: img(src='#{person.photo}')
+        td $#{person.cash}
+          each asset in person.assets
+            td $#{asset.value}
+            td= asset.count
+
+
+
+block scripts
+  script(src='/js/user/home.js')

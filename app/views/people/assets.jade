@@ -1,0 +1,12 @@
+extends ../shared/template
+block content
+  h2 Add an Asset:
+  form(method='post', action='/people/#{person._id}')
+    input(name='name', type='text', placeholder='ITEM', autofocus=true)
+    input(name='photo', type='text', placeholder='PHOTO URL')
+    input(name='value', type='number', placeholder='$ VALUE')
+    input(name='count', type='number', placeholder='COUNT')
+    button Add Item
+
+block scripts
+  script(src='/js/user/home.js')

@@ -6,7 +6,7 @@ var Mongo = require('mongodb'),
 function Person(o){
   this.name = o.name;
   this.photo = o.photo;
-  this.cash = parseFloat(o.cash);
+  this.cash = parseInt(o.cash);
   this.assets = [];
 
 }

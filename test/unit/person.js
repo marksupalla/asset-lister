@@ -7,7 +7,7 @@ var expect    = require('chai').expect,
     Person    = require('../../app/models/person'),
     dbConnect = require('../../app/lib/mongodb'),
     cp        = require('child_process'),
-    db        = 'asset-lister',
+    db        = 'people',
     Mongo     = require('mongodb');
 
 describe('Person', function(){
