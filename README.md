@@ -34,9 +34,6 @@ $ npm install
 $ npm test
 ```
 
-### Contributors
-- [Chyld Medford](https://github.com/chyld)
-
 ### License
 [MIT](LICENSE)
 
